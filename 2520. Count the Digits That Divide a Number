@@ -1,0 +1,16 @@
+class Solution {
+public:
+    int countDigits(int num) {
+        int y = num; 
+        int c=0;
+        while(num!=0)
+        {
+            int n = num%10;
+            if(y%n==0){
+                c++;
+            }
+            num/=10;
+        }
+        return c;
+    }
+};
