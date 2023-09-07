@@ -1,0 +1,16 @@
+class Solution {
+public:
+    vector<long long> sumOfThree(long long num) {
+        vector <long long> e ; 
+        long long p = num/3;
+        long long q = p-1;
+        long long r = p+1;
+        if((p+q+r)==num)
+        {
+            e.push_back(q);
+            e.push_back(p);
+            e.push_back(r);
+        } 
+        return e;
+    }
+};
