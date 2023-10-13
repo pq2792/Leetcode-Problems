@@ -1,0 +1,12 @@
+class Solution {
+public:
+    int theMaximumAchievableX(int num, int t) {
+        int ans=0;
+        int r = num+t;
+        while(t--)
+        {
+            r+=1;
+        }
+        return r;
+    }
+};
